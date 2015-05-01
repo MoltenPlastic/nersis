@@ -1,0 +1,5 @@
+nersis_build
+
+*.o
+*.exe
+*.so
