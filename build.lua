@@ -2,11 +2,8 @@
 CC_EXE="gcc"
 CPP_EXE="g++"
 function sh(...)
-	local s = ""
-	for _,v in pairs({...}) do
-		s=s.." "..v
-	end
-	return os.execute(s)
+	local err=os.execute(table.concat({...}," "))
+	assert(err==0,"Error code "..err)
 end
 function cc(...)
 	sh(CC_EXE,...)
