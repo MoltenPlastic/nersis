@@ -1,9 +1,7 @@
-class Vec;
-class Ang;
-#define vecNum int64_t
-#define angNum int32_t
+typedef vecNum int64_t;
+typedef angNum int32_t;
 
-class Vec {
+class vec {
 	vecNum x;
 	vecNum y;
 	vecNum Vec::distance(void);
@@ -12,6 +10,6 @@ class Vec {
 	Vec Vec::normalize(vecNum distance,Vec base);
 }
 
-class Ang {
+class ang {
 	angNum n;
 }
